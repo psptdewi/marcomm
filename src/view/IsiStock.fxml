@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1278.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockController">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1360.0" pickOnBounds="true">
+         <image>
+            <Image url="@ms-uii(stock).jpg" />
+         </image>
+      </ImageView>
+      <SplitPane layoutX="123.0" layoutY="136.0" prefHeight="501.0" prefWidth="1118.0">
+        <items>
+          <AnchorPane cacheShape="false" centerShape="false" prefHeight="501.0" prefWidth="1118.0" scaleShape="false" snapToPixel="false">
+               <children>
+                  <TextField fx:id="tfLeaflet" layoutX="706.0" layoutY="70.0" prefHeight="30.0" prefWidth="130.0" />
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="321.0" layoutY="67.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Leaflet" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="101.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Poster" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfPoster" layoutX="706.0" layoutY="104.0" prefHeight="30.0" prefWidth="130.0" />
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="321.0" layoutY="135.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Mug" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="169.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Gantungan Kunci" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="321.0" layoutY="203.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Ballpoint" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="237.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Kalender" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="321.0" layoutY="271.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Tasfuring" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="305.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Blocknote" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="339.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Totebag Canvas" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="321.0" layoutY="373.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Backpack FTI" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="321.0" layoutY="407.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Bag Tag" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lLeaflet" alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="510.0" layoutY="67.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lPoster" alignment="TOP_CENTER" layoutX="510.0" layoutY="101.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lMug" alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="510.0" layoutY="135.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lGantunganKunci" alignment="TOP_CENTER" layoutX="510.0" layoutY="169.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lBalllpoint" alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="510.0" layoutY="203.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lKalender" alignment="TOP_CENTER" layoutX="510.0" layoutY="237.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lTasfuring" alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="510.0" layoutY="271.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lBlocknote" alignment="TOP_CENTER" layoutX="510.0" layoutY="305.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lTotebagCanvas" alignment="TOP_CENTER" layoutX="510.0" layoutY="339.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lBackpackFTI" alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="510.0" layoutY="373.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lBagTag" alignment="TOP_CENTER" layoutX="510.0" layoutY="407.0" prefHeight="35.0" prefWidth="155.0" style="-fx-border-color: black;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfMug" layoutX="706.0" layoutY="138.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfGantunganKunci" layoutX="706.0" layoutY="173.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfBallpoint" layoutX="707.0" layoutY="207.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfKalender" layoutX="707.0" layoutY="241.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfTasfuring" layoutX="707.0" layoutY="275.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfBlocknote" layoutX="707.0" layoutY="310.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfTotebagCanvas" layoutX="708.0" layoutY="343.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfBackpackFTI" layoutX="708.0" layoutY="377.0" prefHeight="30.0" prefWidth="130.0" />
+                  <TextField fx:id="tfBagTag" layoutX="708.0" layoutY="412.0" prefHeight="30.0" prefWidth="130.0" />
+                  <Button fx:id="btnUpdate" layoutX="736.0" layoutY="459.0" mnemonicParsing="false" onAction="#update" text="UPDATE" />
+                  <Label layoutX="382.0" layoutY="13.0" prefHeight="51.0" prefWidth="73.0" text="ITEM">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="525.0" layoutY="11.0" prefHeight="51.0" prefWidth="130.0" text="JUMLAH">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="24.0" layoutY="695.0" text="BACK" textFill="WHITE" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="633.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" rotate="90.0" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@down_white.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1250.0" layoutY="112.0" text="Stock Merchandise" textFill="WHITE" />
+    </children>
+</AnchorPane>

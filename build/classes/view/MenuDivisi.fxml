@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1360.0" pickOnBounds="true">
+         <image>
+            <Image url="@ms-uii03.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="240.0" fitWidth="218.0" layoutX="713.0" layoutY="222.0" onMouseClicked="#dashboard" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-dashboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="240.0" fitWidth="218.0" layoutX="429.0" layoutY="219.0" onMouseClicked="#cekLPJ" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-cek.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="739.0" layoutY="429.0" text="DASHBOARD" textFill="#f8f4f4">
+         <font>
+            <Font name="Calisto MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="426.0" text="CEK LPJ" textFill="#f8f4f4">
+         <font>
+            <Font name="Calisto MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="62.0" layoutX="1280.0" layoutY="29.0" onMouseClicked="#logout2" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logout-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

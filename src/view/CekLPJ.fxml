@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CekLPJController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1360.0">
+         <image>
+            <Image url="@ms-uii(lpj).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1276.0" layoutY="111.0" prefHeight="21.0" prefWidth="58.0" text="Cek LPJ" textFill="WHITE">
+         <font>
+            <Font name="Avenir Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="165.0" text="EDIT" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="697.0" text="BACK" textFill="WHITE" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="153.0" onMouseClicked="#edit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@file-edit-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="28.0" layoutY="638.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" rotate="90.0" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@down_white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="5.0" layoutY="206.0" onMouseClicked="#delete" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@1497029758_56.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="234.0" text="DELETE" textFill="WHITE" />
+      <SplitPane dividerPositions="0.41973094170403585" layoutX="122.0" layoutY="137.0" prefHeight="509.0" prefWidth="1117.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="611.0">
+               <children>
+                  <TableView fx:id="listLPJ" layoutX="-2.0" layoutY="-5.0" prefHeight="517.0" prefWidth="560.0">
+                    <columns>
+                      <TableColumn fx:id="clickJudul" prefWidth="140.0" text="Judul" />
+                      <TableColumn fx:id="clickTanggal" prefWidth="120.0" text="Tanggal" />
+                        <TableColumn fx:id="clickJenisAcara" prefWidth="110.0" text="Jenis Acara" />
+                        <TableColumn fx:id="clickStatus" prefWidth="97.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="500.0" prefWidth="1120.0">
+               <content>
+                  <AnchorPane prefHeight="1259.0" prefWidth="1121.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="16.0" layoutY="171.0" prefHeight="17.0" prefWidth="237.0" text="LAPORAN PELAKSANAAN ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="197.0" prefHeight="26.0" prefWidth="240.0" text="A. INFORMASI UMUM PELAKSANAAN">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="224.0" prefHeight="30.0" prefWidth="131.0" text="Wilayah Kegiatan: " />
+                        <TextField fx:id="tfWilKeg1" editable="false" layoutX="200.0" layoutY="228.0" prefHeight="27.0" prefWidth="451.0" style="-fx-alignment: red;" />
+                        <Label layoutX="17.0" layoutY="259.0" prefHeight="30.0" prefWidth="146.0" text="Tanggal Pelaksanaan: " />
+                        <Label layoutX="17.0" layoutY="293.0" prefHeight="30.0" prefWidth="144.0" text="Tempat Pelaksanaan:" />
+                        <TextField fx:id="tfTempat1" editable="false" layoutX="200.0" layoutY="297.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="329.0" prefHeight="30.0" prefWidth="131.0" text="Penanggung Jawab:" />
+                        <TextField fx:id="tfPJ1" editable="false" layoutX="200.0" layoutY="332.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="362.0" prefHeight="30.0" prefWidth="131.0" text="Anggota:" />
+                        <TextField fx:id="tfAnggota1" editable="false" layoutX="200.0" layoutY="366.0" prefHeight="81.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="492.0" prefHeight="30.0" prefWidth="131.0" text="Nama Institusi: " />
+                        <TextField fx:id="tfInstitut1" editable="false" layoutX="200.0" layoutY="495.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="525.0" prefHeight="30.0" prefWidth="131.0" text="Alamat: " />
+                        <TextField fx:id="tfAlmt2" editable="false" layoutX="200.0" layoutY="529.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="561.0" prefHeight="30.0" prefWidth="131.0" text="Contact Person: " />
+                        <TextField fx:id="tfCP3" editable="false" layoutX="200.0" layoutY="564.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="461.0" prefHeight="26.0" prefWidth="240.0" text="B. DATA PELAKSANA">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="640.0" prefHeight="26.0" prefWidth="240.0" text="C. PENGGUNAAN TRASNPORTASI">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="597.0" prefHeight="30.0" prefWidth="131.0" text="Realisasi Kegiatan:" />
+                        <TextField fx:id="tfRelasi" editable="false" layoutX="200.0" layoutY="600.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="671.0" prefHeight="30.0" prefWidth="131.0" text="Jenis Kendaraan:" />
+                        <TextField fx:id="tfJenisKendaraan" editable="false" layoutX="200.0" layoutY="675.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="707.0" prefHeight="30.0" prefWidth="131.0" text="Tipe Kendaraan:" />
+                        <TextField fx:id="tfTipeKendaraan" editable="false" layoutX="200.0" layoutY="710.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="743.0" prefHeight="30.0" prefWidth="131.0" text="Driver:" />
+                        <TextField fx:id="tfDriver" editable="false" layoutX="200.0" layoutY="746.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="17.0" layoutY="785.0" prefHeight="26.0" prefWidth="352.0" text="D. ALAT BANTU LOGISTIK DAN ALAT BANTU PROMOSI">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="861.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Leaflet" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="895.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Poster" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="929.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Mug" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="963.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Gantungan Kunci" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="997.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Ballpoint" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="1031.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Kalender" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="1065.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Tasfuring" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="1099.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Blocknote" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="1133.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Totebag Canvas" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="1167.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Backpack FTI" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="149.0" layoutY="1201.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="Bag Tag" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="149.0" layoutY="827.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="ITEM" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="338.0" layoutY="827.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" text="JUMLAH BARANG" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="110.0" fitWidth="260.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo%20uii.png" />
+                           </image>
+                        </ImageView>
+                        <ComboBox fx:id="btnpilihanAcara" disable="true" layoutX="193.0" layoutY="169.0" prefHeight="25.0" prefWidth="119.0" />
+                        <TextField fx:id="tfLeafletLPJ" editable="false" layoutX="338.0" layoutY="861.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfPosterLPJ" editable="false" layoutX="338.0" layoutY="895.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfMugLPJ" editable="false" layoutX="338.0" layoutY="929.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfGantunganKunciLPJ" editable="false" layoutX="338.0" layoutY="963.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfBallpointLPJ" editable="false" layoutX="338.0" layoutY="997.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfKalenderLPJ" editable="false" layoutX="338.0" layoutY="1031.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfTasfuringLPJ" editable="false" layoutX="338.0" layoutY="1065.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfBlocknoteLPJ" editable="false" layoutX="338.0" layoutY="1099.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfTotebagCanvasLPJ" editable="false" layoutX="338.0" layoutY="1133.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfBackpackFTILPJ" editable="false" layoutX="338.0" layoutY="1167.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <TextField fx:id="tfBagTagLPJ" editable="false" layoutX="338.0" layoutY="1201.0" prefHeight="35.0" prefWidth="190.0" style="-fx-border-color: black;" />
+                        <DatePicker fx:id="tfTGL1" editable="false" layoutX="200.0" layoutY="263.0" prefHeight="27.0" prefWidth="451.0" />
+                        <Label layoutX="16.0" layoutY="136.0" prefHeight="17.0" prefWidth="237.0" text="JUDUL LAPORAN">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfJudul" editable="false" layoutX="193.0" layoutY="135.0" prefHeight="27.0" prefWidth="451.0" style="-fx-alignment: red;" />
+                        <Label layoutX="17.0" layoutY="101.0" prefHeight="17.0" prefWidth="237.0" text="ID Laporan">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfID" editable="false" layoutX="194.0" layoutY="100.0" prefHeight="27.0" prefWidth="451.0" style="-fx-alignment: red;" />
+                        <Label layoutX="385.0" layoutY="172.0" prefHeight="20.0" prefWidth="50.0" text="STATUS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="btnpilihanStatus" disable="true" layoutX="448.0" layoutY="169.0" prefHeight="25.0" prefWidth="119.0" />
+                     </children>
+                  </AnchorPane>
+               </content></ScrollPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

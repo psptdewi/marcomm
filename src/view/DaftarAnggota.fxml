@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnggotaController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1360.0" pickOnBounds="true">
+         <image>
+            <Image url="@ms-uii(anggota).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1260.0" layoutY="113.0" prefHeight="17.0" prefWidth="86.0" text="Data Anggota" textFill="WHITE" />
+      <Label layoutX="43.0" layoutY="691.0" text="BACK" textFill="WHITE" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="29.0" layoutY="634.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" rotate="90.0" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@down_white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="11.0" layoutY="143.0" onMouseClicked="#form" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-new.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="160.0" text="NEW" textFill="WHITE" />
+      <Label layoutX="60.0" layoutY="220.0" text="EDIT" textFill="WHITE" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="4.0" layoutY="208.0" onMouseClicked="#editAnggota" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@file-edit-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="-1.0" layoutY="261.0" onMouseClicked="#deleteAnggotaa" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@1497029758_56.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="289.0" text="DELETE" textFill="WHITE" />
+      <SplitPane dividerPositions="0.4336917562724014" layoutX="122.0" layoutY="136.0" prefHeight="500.0" prefWidth="1118.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="383.0">
+               <children>
+                  <TableView fx:id="listAnggota" prefHeight="504.0" prefWidth="482.0">
+                    <columns>
+                      <TableColumn fx:id="listID" prefWidth="200.0" text="ID Anggota" />
+                      <TableColumn fx:id="listNama" prefWidth="290.0" text="Nama" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="498.0" prefWidth="633.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="631.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="140.0" layoutY="172.0" prefHeight="42.0" prefWidth="82.0" text="id Anggota:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="201.0" prefHeight="42.0" prefWidth="75.0" text="Nama:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="230.0" prefHeight="42.0" prefWidth="132.0" text="Jurusan/Angkatan:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="260.0" prefHeight="42.0" prefWidth="62.0" text="Contact:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfid" editable="false" layoutX="276.0" layoutY="180.0" prefHeight="27.0" prefWidth="222.0" />
+                        <TextField fx:id="tfNama" editable="false" layoutX="276.0" layoutY="209.0" prefHeight="27.0" prefWidth="222.0" />
+                        <TextField fx:id="tfJur" editable="false" layoutX="276.0" layoutY="238.0" prefHeight="27.0" prefWidth="222.0" />
+                        <TextField fx:id="tfContact" editable="false" layoutX="276.0" layoutY="267.0" prefHeight="27.0" prefWidth="222.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

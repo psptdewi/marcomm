@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1360.0" pickOnBounds="true">
+         <image>
+            <Image url="@ms-uii02.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="309.0" layoutY="212.0" onMouseClicked="#LPJ" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-lpj.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="332.0" layoutY="429.0" prefHeight="61.0" prefWidth="204.0" text="MEMBUAT LPJ" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="563.0" layoutY="219.0" onMouseClicked="#merchandise" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-merch.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="590.0" layoutY="432.0" prefHeight="61.0" prefWidth="204.0" text="MERCHANDISE" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="820.0" layoutY="214.0" onMouseClicked="#dataAnggota" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logo-anggota.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="837.0" layoutY="430.0" prefHeight="61.0" prefWidth="232.0" text="DATA ANGGOTA" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="62.0" layoutX="1280.0" layoutY="29.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@logout-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
